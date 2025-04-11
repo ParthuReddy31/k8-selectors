@@ -20,7 +20,7 @@ spec:
   - name: with-pod-affinity
     image: registry.k8s.io/pause:3.8
   affinity:
-    podAffinity:
+    podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
