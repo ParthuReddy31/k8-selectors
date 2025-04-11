@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: node-selector
+  name: no-toleration
   labels:
-    purpose: "selector-demo"
+    purpose: "no-toleration"
 spec:
   nodeSelector:
     topology.kubernetes.io/zone: us-east-1f
