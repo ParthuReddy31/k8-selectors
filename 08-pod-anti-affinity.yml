@@ -29,8 +29,8 @@ spec:
             values:
             - pod-1
         topologyKey: topology.kubernetes.io/zone
-  # tolerations:
-  # - key: "hardware"
-  #   operator: "Equal"
-  #   value: "gpu"
-  #   effect: "NoExecute"    
+  tolerations:
+  - key: "hardware"
+    operator: "Equal"
+    value: "gpu"
+    effect: "NoExecute"    
